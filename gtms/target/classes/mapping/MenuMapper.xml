@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gtms.gtms.mapper.MenuMapper">
+    <resultMap id="BaseResultMap" type="com.gtms.gtms.entity.Menu">
+        <id column="id" property="id"/>
+        <result column="menu_text" property="menuText"/>
+        <result column="menu_belong" property="menuBelong"/>
+        <result column="menu_status" property="menuStatus"/>
+        <result column="menu_icon" property="menuIcon"/>
+        <result column="menu_url" property="menuUrl"/>
+    </resultMap>
+
+    <select id="getMenyBymenuBelong" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+          *
+        from
+          T_MENU
+        where
+          menu_belong = #{menuBelong}
+        and menu_status = 1
+    </select>
+
+    <select id="selectAllMenu" parameterType="com.gtms.gtms.entity.Menu" resultMap="BaseResultMap">
+        select
+        *
+        from
+        T_MENU
+        where
+        menu_belong != 3
+        <if test="md.menuText != null and md.menuText != ''">
+            and menu_text like CONCAT( '%', #{md.menuText}, '%' )
+        </if>
+        <if test="md.menuBelong != null and md.menuBelong != ''">
+            and menu_belong = #{md.menuBelong}
+        </if>
+        <if test="md.menuStatus != null and md.menuStatus != ''">
+            and menu_status = #{md.menuStatus}
+        </if>
+    </select>
+</mapper>

@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: dev
+  mail:
+    host: smtp.qq.com
+    username: 846445745@qq.com
+    # 授权码
+    password: tafrtnvpvfwrbbai
+    default-encoding: UTF-8
+    port: 465
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+  devtools:
+    add-properties: true
+  servlet:
+    multipart:
+      # 设置单个文件的大小,单位是byte,这里设置50M
+      max-file-size: 24228800
+      # 设置单次请求的文件的总大小单位是byte,这里设置100M
+      max-request-size: 104857600
+  thymeleaf:
+    cache: false
+mail:
+  from:
+    account: 846445745@qq.com
+
+ftp:
+  host: 172.20.10.14
+  port: 21
+  userName: ftpuser
+  password: 724055
+  basePath: /home/ftpuser/
+
+
+
+

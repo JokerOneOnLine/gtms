@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gtms.gtms.mapper.StudentInfoMapper">
+    <resultMap id="BaseResultMap" type="com.gtms.gtms.entity.StudentInfo">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="student_no" property="studentNo"/>
+        <result column="student_name" property="studentName"/>
+        <result column="student_major" property="studentMajor"/>
+        <result column="student_instructor" property="studentInstructor"/>
+        <result column="student_class" property="studentClass"/>
+        <result column="student_phone" property="studentPhone"/>
+        <result column="student_email" property="studentEmail"/>
+    </resultMap>
+    <select id="getInfo" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+      select
+        *
+      from
+        (select
+            *
+         from
+            T_STUDENT_INFO
+         where
+            user_id = #{userId}) s
+      left join T_USER u on s.user_id = u.id
+    </select>
+
+    <update id="modifyInfo" parameterType="com.gtms.gtms.vo.ModifyInfoVo">
+      update
+        T_STUDENT_INFO
+      set
+        student_phone = #{md.phone},student_email = #{md.email}
+      where
+        user_id = #{md.userId}
+    </update>
+</mapper>

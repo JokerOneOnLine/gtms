@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gtms.gtms.mapper.StudentTeacherRelationMapper">
+    <resultMap id="BaseResultMap" type="com.gtms.gtms.entity.StudentTeacherRelation">
+        <id column="id" property="id"/>
+        <result column="student_no" property="studentNo"/>
+        <result column="student_name" property="studentName"/>
+        <result column="student_class" property="studentClass"/>
+        <result column="student_major" property="studentMajor"/>
+        <result column="student_instructor" property="studentInstructor"/>
+        <result column="student_Email" property="studentEmail"/>
+        <result column="student_phone" property="studentPhone"/>
+        <result column="teacher_no" property="teacherNo"/>
+        <result column="teacher_name" property="teacherName"/>
+        <result column="teacher_email" property="teacherEmail"/>
+        <result column="teacher_phone" property="teacherPhone"/>
+        <result column="teacher_title" property="teacherTitle"/>
+        <result column="thesis_title" property="thesisTitle"/>
+        <result column="thesis_no" property="thesisNo"/>
+        <result column="teacher_opinion" property="teacherOpinion"/>
+        <result column="opinion_flag" property="opinionFlag"/>
+        <result column="task_status" property="taskStatus"/>
+        <result column="task_url" property="taskUrl"/>
+        <result column="thesis_status" property="thesisStatus"/>
+        <result column="thesis_url" property="thesisUrl"/>
+    </resultMap>
+    <select id="getInfoByStudentNo" parameterType="java.lang.String" resultMap="BaseResultMap">
+      select * from T_STUDENT_TEACHER_RELATION where student_no = #{studentNo}
+    </select>
+    <delete id="deleteByThesisId" parameterType="java.lang.String">
+      delete from T_STUDENT_TEACHER_RELATION where thesis_no in (#{ids})
+    </delete>
+    <select id="getInfoByTeacherNo" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+            *
+        FROM
+            (
+        SELECT
+            str.*,
+            si.student_major,
+            si.student_instructor,
+            si.student_Email,
+            si.student_phone
+        FROM
+            T_STUDENT_TEACHER_RELATION str
+            LEFT JOIN T_STUDENT_INFO si ON str.student_no = si.student_no
+            ) temp
+        WHERE
+            temp.teacher_no = #{teacherNo}
+    </select>
+    <select id="getInfoByThesisNo" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select temp.* from(
+        select
+          str.*,si.student_major,si.student_instructor,si.student_email,si.student_phone,ti.teacher_email
+        from T_STUDENT_TEACHER_RELATION str
+        left join T_STUDENT_INFO si
+        on str.student_no = si.student_no
+        left join T_TEACHER_INFO ti
+        on str.teacher_no = ti.teacher_no) temp
+        where temp.thesis_no = #{thesisNo}
+    </select>
+    <select id="getInfoByThesisNos" resultMap="BaseResultMap">
+        select temp.* from(
+        select
+          str.*,si.student_major,si.student_instructor,si.student_email,si.student_phone
+        from T_STUDENT_TEACHER_RELATION str
+        left join T_STUDENT_INFO si
+        on str.student_no = si.student_no) temp
+        where temp.thesis_no in (#{thesisNos})
+    </select>
+
+    <select id="getAgreeThesisByTeacherNo" parameterType="java.lang.String" resultMap="BaseResultMap">
+       SELECT
+        str.*,
+        si.student_major,
+        si.student_instructor,
+        si.student_Email,
+        si.student_phone
+      FROM
+	  ( SELECT * FROM T_STUDENT_TEACHER_RELATION WHERE teacher_no IN ( #{teacherNo} ) AND opinion_flag = 1 ) str
+	  LEFT JOIN T_STUDENT_INFO si ON str.student_no = si.student_no
+    </select>
+
+    <select id="getAgreeThesisByStudentNo" parameterType="java.lang.String" resultMap="BaseResultMap">
+       SELECT
+        str.*,
+        si.student_major,
+        si.student_instructor,
+        si.student_Email,
+        si.student_phone
+      FROM
+	  ( SELECT * FROM T_STUDENT_TEACHER_RELATION WHERE student_no IN ( #{studentNo} ) AND opinion_flag = 1 ) str
+	  LEFT JOIN T_STUDENT_INFO si ON str.student_no = si.student_no
+    </select>
+
+    <update id="updateByThesisNo">
+        update T_STUDENT_TEACHER_RELATION set teacher_opinion = #{teacherOpinion},opinion_flag = #{opinion} where thesis_no = #{thesisNo}
+    </update>
+
+    <update id="updateTaskUrlByThesisNo">
+        update T_STUDENT_TEACHER_RELATION set task_status = 1,task_url = #{taskUrl} where thesis_no = #{thesisNo}
+    </update>
+
+    <update id="updateThesisUrlByThesisNo">
+        update T_STUDENT_TEACHER_RELATION set thesis_status = 1,thesis_url = #{thesisUrl} where thesis_no = #{thesisNo}
+    </update>
+
+    <select id="getThesisInfoDetail" parameterType="com.gtms.gtms.entity.StudentTeacherRelation" resultMap="BaseResultMap">
+        SELECT
+            si.*,
+            temp.teacher_no,
+            temp.teacher_name,
+            temp.thesis_no,
+            temp.thesis_title,
+            temp.teacher_title,
+            temp.teacher_opinion,
+            temp.opinion_flag,
+            temp.task_status,
+            temp.task_url,
+            temp.thesis_status,
+            temp.thesis_url,
+            temp.teacher_title,
+            temp.teacher_phone,
+            temp.teacher_email
+        FROM
+            t_student_info si
+        LEFT JOIN (
+            SELECT
+                str.*,
+                ti.teacher_title,
+                ti.teacher_phone,
+                ti.teacher_email
+            FROM
+                t_student_teacher_relation str
+                LEFT JOIN t_teacher_info ti ON str.teacher_no = ti.teacher_no
+        ) temp ON temp.student_no = si.student_no
+        WHERE
+            1 = 1
+            <if test="md.studentName !=null and md.studentName!=''">
+                AND si.student_name LIKE CONCAT( '%', #{md.studentName}, '%' )
+            </if>
+            <if test="md.studentNo !=null and md.studentNo!=''">
+                AND si.student_no LIKE CONCAT( '%', #{md.studentNo}, '%' )
+            </if>
+            <if test="md.thesisTitle !=null and md.thesisTitle!=''">
+                AND temp.thesis_title LIKE CONCAT( '%', #{md.thesisTitle}, '%' )
+            </if>
+            <if test="md.teacherName !=null and md.teacherName!=''">
+                AND temp.teacher_name LIKE CONCAT( '%', #{md.teacherName}, '%' )
+            </if>
+            <if test="md.teacherNo !=null and md.teacherNo!=''">
+                AND temp.teacher_no LIKE CONCAT( '%', #{md.teacherNo}, '%' )
+            </if>
+    </select>
+    <select id="selectPassNum" resultType="java.lang.Integer">
+        select count(id) from t_student_teacher_relation where opinion_flag = 1
+    </select>
+    <select id="selectUnderPassNumAndPassNum" resultType="java.lang.Integer">
+        select count(id) from t_student_teacher_relation
+    </select>
+    <select id="selectNoPassNum" resultType="java.lang.Integer">
+        select count(id) from t_no_pass_thesis
+    </select>
+</mapper>

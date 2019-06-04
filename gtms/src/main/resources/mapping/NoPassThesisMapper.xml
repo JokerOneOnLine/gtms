@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gtms.gtms.mapper.NopassThesisMapper">
+    <resultMap id="BaseResultMap" type="com.gtms.gtms.entity.StudentTeacherRelation">
+        <id column="id" property="id"/>
+        <result column="student_no" property="studentNo"/>
+        <result column="student_name" property="studentName"/>
+        <result column="student_class" property="studentClass"/>
+        <result column="student_major" property="studentMajor"/>
+        <result column="student_instructor" property="studentInstructor"/>
+        <result column="student_Email" property="studentEmail"/>
+        <result column="student_phone" property="studentPhone"/>
+        <result column="teacher_no" property="teacherNo"/>
+        <result column="teacher_name" property="teacherName"/>
+        <result column="teacher_email" property="teacherEmail"/>
+        <result column="teacher_phone" property="teacherPhone"/>
+        <result column="teacher_title" property="teacherTitle"/>
+        <result column="thesis_title" property="thesisTitle"/>
+        <result column="thesis_no" property="thesisNo"/>
+        <result column="teacher_opinion" property="teacherOpinion"/>
+        <result column="opinion_flag" property="opinionFlag"/>
+        <result column="task_status" property="taskStatus"/>
+        <result column="task_url" property="taskUrl"/>
+        <result column="thesis_status" property="thesisStatus"/>
+        <result column="thesis_url" property="thesisUrl"/>
+    </resultMap>
+    <select id="selectAll" parameterType="com.gtms.gtms.entity.StudentTeacherRelation" resultMap="BaseResultMap">
+       SELECT
+        temp.*,
+        si.student_major,
+        si.student_instructor,
+        si.student_Email,
+        si.student_phone
+      FROM
+        (
+    SELECT
+        npt.*,
+        ti.teacher_title,
+        ti.teacher_phone,
+        ti.teacher_email
+    FROM
+        t_no_pass_thesis npt
+        LEFT JOIN t_teacher_info ti ON npt.teacher_no = ti.teacher_no
+        ) temp
+        LEFT JOIN t_student_info si ON temp.student_no = si.student_no
+        WHERE
+            1 = 1
+            <if test="md.studentName !=null and md.studentName!=''">
+                AND si.student_name LIKE CONCAT( '%', #{md.studentName}, '%' )
+            </if>
+            <if test="md.studentNo !=null and md.studentNo!=''">
+                AND si.student_no LIKE CONCAT( '%', #{md.studentNo}, '%' )
+            </if>
+            <if test="md.thesisTitle !=null and md.thesisTitle!=''">
+                AND temp.thesis_title LIKE CONCAT( '%', #{md.thesisTitle}, '%' )
+            </if>
+            <if test="md.teacherName !=null and md.teacherName!=''">
+                AND temp.teacher_name LIKE CONCAT( '%', #{md.teacherName}, '%' )
+            </if>
+            <if test="md.teacherNo !=null and md.teacherNo!=''">
+                AND temp.teacher_no LIKE CONCAT( '%', #{md.teacherNo}, '%' )
+            </if>
+    </select>
+</mapper>

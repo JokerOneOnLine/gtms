@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/select.css" rel="stylesheet" type="text/css"/>
+
+    <script language="JavaScript" src="js/jquery.js"></script>
+    <script language="JavaScript" src="common/common.js"></script>
+    <script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="js/select-ui.min.js"></script>
+    <script type="text/javascript" src="editor/kindeditor.js"></script>
+    <script type="text/javascript" src="js/page/selectThesisDetail.js"></script>
+    <script type="text/javascript">
+        $('.tablelist tbody tr:odd').addClass('odd');
+    </script>
+</head>
+<body>
+
+<div style="margin-bottom: 10px;margin-top: 10px;">
+    <label><strong>学生姓名</strong></label><input id="studentName" name="" type="text" class="dfinput" style="width: 145px"/>
+    <label><strong>学生学号</strong></label><input id="studentNo" name="" type="text" class="dfinput" style="width: 145px"/>
+    <label><strong>论文题目</strong></label><input id="thesisTitle" name="" type="text" class="dfinput" style="width: 145px"/>
+    <label><strong>教师姓名</strong></label><input id="teacherName" name="" type="text" class="dfinput" style="width: 145px"/>
+    <label><strong>教师编号</strong></label><input id="teacherNo" name="" type="text" class="dfinput" style="width: 145px"/>
+    <label><strong>处理结果</strong></label>
+    <div style="display: inline-flex">
+        <select id="opinionFlagStr" class="select1">
+            <option value="" selected="selected">全部</option>
+            <option value="1">未审核</option>
+            <option value="2">未选题</option>
+            <option value="3">审核通过</option>
+            <option value="4">审核未通过</option>
+        </select>
+    </div>
+    <label>&nbsp;</label><input id="queryBtn" name="" type="button" class="btn" value="查询"/>
+</div>
+
+<table class="tablelist">
+    <thead>
+    <tr>
+        <th>编号</th>
+        <th>学生姓名</th>
+        <th>学号</th>
+        <th>专业</th>
+        <th>班级</th>
+        <th>电话</th>
+        <th>邮箱</th>
+        <th>论文题目</th>
+        <th>教师编号</th>
+        <th>教师姓名</th>
+        <th>教师职称</th>
+        <th>电话</th>
+        <th>邮箱</th>
+        <th>处理结果</th>
+        <th>备注</th>
+    </tr>
+    </thead>
+    <tbody id="data">
+
+    </tbody>
+</table>
+
+<div class="pagin">
+    <div class="message">共<i id="totalData" class="blue"></i>条记录，当前显示第&nbsp;<i id="currentPage" class="blue"></i>&nbsp;页
+    </div>
+    <ul class="paginList">
+        <li id="firstPage" class="paginItem"><a href="javascript:;">首页</a></li>
+        <li id="prePage" class="paginItem"><a href="javascript:;">上一页</a></li>
+        <li id="nextPage" class="paginItem"><a href="javascript:;">下一页</a></li>
+        <li id="lastPage" class="paginItem"><a href="javascript:;">尾页</a></li>
+    </ul>
+</div>
+</div>
+
+<script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+</script>
+
+</body>
+
+</html>

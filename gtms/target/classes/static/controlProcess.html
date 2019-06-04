@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/select.css" rel="stylesheet" type="text/css"/>
+    <link href="css/switch.css" rel="stylesheet" type="text/css"/>
+    <script language="JavaScript" src="js/jquery.js"></script>
+    <script language="JavaScript" src="common/common.js"></script>
+    <script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="js/select-ui.min.js"></script>
+    <script type="text/javascript" src="editor/kindeditor.js"></script>
+    <script type="text/javascript" src="js/page/controlProcess.js"></script>
+</head>
+
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">控制进程</a></li>
+    </ul>
+</div>
+<div style="margin-bottom: 10px;margin-top: 10px;">
+    <label><strong>菜单</strong></label><input id="menuText" name="" type="text" class="dfinput" style="width: 145px"/>
+    <label><strong>使用者</strong></label>
+    <div style="display: inline-flex">
+        <select id="menuBelong" class="select1">
+            <option value="" selected="selected">全部</option>
+            <option value="1">学生</option>
+            <option value="2">教师</option>
+        </select>
+    </div>
+    <label><strong>状态</strong></label>
+    <div style="display: inline-flex">
+        <select id="menuStatus" class="select1">
+            <option value="" selected="selected">全部</option>
+            <option value="1">开启</option>
+            <option value="2">关闭</option>
+        </select>
+    </div>
+    <label>&nbsp;</label><input id="queryBtn" name="" type="button" class="btn" value="查询"/>
+</div>
+<div class="rightinfo">
+    <table class="tablelist">
+        <thead>
+        <tr>
+            <th>菜单</th>
+            <th>使用者</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody id="data">
+        </tbody>
+    </table>
+
+
+    <div class="pagin">
+        <div class="message">共<i id="totalData" class="blue"></i>条记录，当前显示第&nbsp;<i id="currentPage" class="blue"></i>&nbsp;页
+        </div>
+        <ul class="paginList">
+            <li id="firstPage" class="paginItem"><a href="javascript:;">首页</a></li>
+            <li id="prePage" class="paginItem"><a href="javascript:;">上一页</a></li>
+            <li id="nextPage" class="paginItem"><a href="javascript:;">下一页</a></li>
+            <li id="lastPage" class="paginItem"><a href="javascript:;">尾页</a></li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+</script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/select.css" rel="stylesheet" type="text/css"/>
+
+    <script language="JavaScript" src="js/jquery.js"></script>
+    <script language="JavaScript" src="common/common.js"></script>
+    <script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="js/select-ui.min.js"></script>
+    <script type="text/javascript" src="editor/kindeditor.js"></script>
+    <script type="text/javascript" src="js/page/managerAddUser.js"></script>
+    <script type="text/javascript">
+        $("#usual1 ul").idTabs();
+    </script>
+
+    <script type="text/javascript">
+        $('.tablelist tbody tr:odd').addClass('odd');
+    </script>
+</head>
+<body>
+
+<div id="tab1" class="tabson">
+    <ul class="forminfo">
+        <li><label>用户角色<b>*</b></label>
+            <div class="vocation">
+                <select id="role" class="select1" onchange="roleChange()">
+                    <option value="1" selected="selected">学生</option>
+                    <option value="2">教师</option>
+                </select>
+            </div>
+        </li>
+        <div id="studentInfo">
+            <li><label>学号<b>*</b></label><input id="studentNo" name="" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>姓名<b>*</b></label><input id="studentName" name="" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>专业<b>*</b></label><input id="studentMajor" name="" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>辅导员<b>*</b></label><input id="studentInstructor" name="" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>班级<b>*</b></label><input id="studentClass" name="" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>电话</label><input name="" id="studentPhone" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>邮箱</label><input name="" id="studentEmail" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>&nbsp;</label><input name="" id="submitStudentInfo" type="button" class="btn" value="提交"/></li>
+        </div>
+
+        <div id="teacherInfo" style="display: none">
+            <li><label>教师编号<b>*</b></label><input name="" id="teacherNo" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>教师姓名<b>*</b></label><input name="" id="teacherName" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>职称<b>*</b></label><input name="" id="teacherTitle" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>学历<b>*</b></label><input name="" id="teacherEducation" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>电话</label><input name="" id="teacherPhone" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>邮箱</label><input name="" id="teacherEmail" type="text" class="dfinput" value="" style="width:345px;"/></li>
+            <li><label>&nbsp;</label><input name="" id="submitTeacherInfo" type="button" class="btn" value="提交"/></li>
+        </div>
+    </ul>
+</div>
+
+</body>
+</html>

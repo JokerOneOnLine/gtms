@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gtms.gtms.mapper.ThesisInfoMapper">
+    <resultMap id="BaseResultMap" type="com.gtms.gtms.entity.ThesisInfo">
+        <id column="id" property="id"/>
+        <result column="thesis_title" property="thesisTitle"/>
+        <result column="teacher_no" property="teacherNo"/>
+        <result column="teacher_name" property="teacherName"/>
+        <result column="notice_info" property="noticeInfo"/>
+        <result column="select_num" property="selectNum"/>
+        <result column="teacher_title" property="teacherTitle"/>
+        <result column="teacher_email" property="teacherEmail"/>
+        <result column="teacher_phone" property="teacherPhone"/>
+    </resultMap>
+
+    <select id="getThesisInfo" resultMap="BaseResultMap">
+      select
+        thesis.*,
+        teacher.teacher_title,
+        teacher.teacher_phone,
+        teacher.teacher_email
+      from
+        T_THESIS_INFO thesis
+      left join T_TEACHER_INFO teacher
+      on thesis.teacher_no = teacher.teacher_no
+    </select>
+
+    <select id="getThesisInfoByTeacherNo" parameterType="java.lang.String" resultMap="BaseResultMap">
+      select
+        *
+      from
+        T_THESIS_INFO
+      where
+        teacher_no = #{teacherNo}
+    </select>
+
+</mapper>

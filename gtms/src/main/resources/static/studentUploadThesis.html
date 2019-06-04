@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/dialog.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="common/common.js"></script>
+    <script type="text/javascript" src="js/page/studentUploadThesis.js"></script>
+    <script type="text/javascript" src="js/mDialog.js"></script>
+    <script type="text/javascript" src="js/jquery-form.js"></script>
+</head>
+
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">给任务书</a></li>
+    </ul>
+</div>
+
+<div class="rightinfo">
+    <table class="tablelist">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>学号</th>
+            <th>学生姓名</th>
+            <th>专业</th>
+            <th>班级</th>
+            <th>辅导员</th>
+            <th>学生电话</th>
+            <th>学生邮箱</th>
+            <th>论文题目</th>
+            <th>论文上传状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+    <div class="pagin">
+        <div class="message">共<i id="totalData" class="blue"></i>条记录，当前显示第&nbsp;<i id="currentPage" class="blue"></i>&nbsp;页
+        </div>
+        <ul class="paginList">
+            <li id="firstPage" class="paginItem"><a href="javascript:;">首页</a></li>
+            <li id="prePage" class="paginItem"><a href="javascript:;">上一页</a></li>
+            <li id="nextPage" class="paginItem"><a href="javascript:;">下一页</a></li>
+            <li id="lastPage" class="paginItem"><a href="javascript:;">尾页</a></li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+</script>
+
+</body>
+
+</html>

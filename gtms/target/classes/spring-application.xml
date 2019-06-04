@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+    <bean id="gtmsDataSource" class="com.alibaba.druid.pool.DruidDataSource"  init-method="init" destroy-method="close" primary="true">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+        <!-- allowMultiQueries=true允许一次执行多条sql -->
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/gtms?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;allowMultiQueries=true&amp;zeroDateTimeBehavior=CONVERT_TO_NULL&amp;serverTimezone=UTC" />
+        <property name="username" value="root" />
+        <property name="password" value="724055" />
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="0" />
+        <!-- 连接池最大使用连接数量 -->
+        <property name="maxActive" value="20" />
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="5" />
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWait" value="60000" />
+        <property name="validationQuery" value="SELECT 1 FROM DUAL" />
+        <property name="testOnBorrow" value="true" />
+        <property name="logAbandoned" value="true" />
+        <property name="testOnReturn" value="false" />
+        <property name="testWhileIdle" value="true" />
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+        <!--打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="removeAbandoned" value="true" />
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="poolPreparedStatements" value="true" />
+        <!-- 关闭abanded连接时输出错误日志 -->
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+        <!-- 监控数据库 -->
+        <property name="filters" value="stat,log4j" />
+    </bean>
+
+    <!-- 事务管理器:基于jdbc,ibatis,mybaits的spring事务管理 -->
+    <bean id="gtmsTransactionManager" primary="true"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="gtmsDataSource" />
+    </bean>
+
+    <bean id="globalConfig" class="com.baomidou.mybatisplus.entity.GlobalConfiguration">
+        <property name="idType" value="0" />
+        <!-- 数据库类型配置 -->
+        <property name="dbType" value="mysql" />
+
+        <!-- 全局表为下划线命名设置 true -->
+        <property name="dbColumnUnderline" value="true" />
+    </bean>
+
+    <!-- MyBatis SqlSessionFactoryBean 配置 -->
+    <bean id="gtmsSqlSessionFactory" class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
+        <property name="dataSource" ref="gtmsDataSource" />
+        <property name="configLocation" value="classpath:mybatis-config.xml" />
+        <property name="typeAliasesPackage" value="com.gtms.gtms.entity" />
+        <property name="mapperLocations">
+            <list>
+                <value>classpath*:mapping/*Mapper.xml</value>
+            </list>
+        </property>
+        <property name="plugins">
+            <array>
+                <!-- 分页插件配置 -->
+                <ref bean="pageinationInterceptor"/>
+            </array>
+        </property>
+        <property name="globalConfig" ref="globalConfig"/>
+    </bean>
+
+    <bean id="gtmsMapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.gtms.gtms.mapper" />
+        <property name="sqlSessionFactory" ref="gtmsSqlSessionFactory"/>
+    </bean>
+
+    <!-- 开启注解事务管理器 -->
+    <tx:annotation-driven transaction-manager="gtmsTransactionManager" proxy-target-class="true" />
+
+    <!-- 配置事务通知属性 -->
+    <tx:advice id="gtmsTransactionAdvice" transaction-manager="gtmsTransactionManager">
+        <!-- 定义事务传播属性 -->
+        <tx:attributes>
+            <tx:method name="get*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="select*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="count*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="find*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="list*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="save*" propagation="REQUIRED" />
+            <tx:method name="add*" propagation="REQUIRED" />
+            <tx:method name="insert*" propagation="REQUIRED" />
+            <tx:method name="create*" propagation="REQUIRED" />
+            <tx:method name="update*" propagation="REQUIRED" />
+            <tx:method name="remove*" propagation="REQUIRED" />
+            <tx:method name="delete*" propagation="REQUIRED" />
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 配置事务切面,service包中的类会被代理 -->
+    <aop:config>
+        <aop:pointcut id="gtmsTxPointcut" expression="execution(* com.gtms.gtms.service.serviceImpl.*.*(..))" />
+        <aop:advisor advice-ref="gtmsTransactionAdvice" pointcut-ref="gtmsTxPointcut" />
+    </aop:config>
+</beans>

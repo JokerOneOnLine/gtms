@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b27afad-49bf-4e1f-8597-d9f82770098e" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gtms" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>and str.teacher_no</find>
+      <find>getStudentSelectThesisByTeacherNo</find>
+      <find>getAgreeThesisByTeacherNo</find>
+      <find>getInfoByThesisNos</find>
+      <find>@Value</find>
+      <find>mailUtils.sendEmail</find>
+      <find>/uploadTask</find>
+      <find>/uploadThesis</find>
+      <find>getInfoByThesisNo</find>
+      <find>dfinput</find>
+      <find>518</find>
+      <find>344</find>
+      <find>主键返回</find>
+      <find>off</find>
+      <find>label</find>
+      <find>退出</find>
+      <find>下载</find>
+      <find>淇</find>
+      <find>还原</find>
+      <find>cityleft</find>
+      <find>getThesisInfoDetail</find>
+      <find>oracle</find>
+      <find>据教师编号查询学生选题信</find>
+      <find>getInfoByTeacherNo</find>
+      <find>开始处理论文意见</find>
+      <find>selectOne()</find>
+      <find>开始下载文件，远程路径</find>
+      <find>Factory</find>
+      <find>org.mybatis.spring.boot</find>
+      <find>page</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/static/images</replace>
+      <replace>/static/js/</replace>
+      <replace>344</replace>
+      <replace>345</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/echarts/dataTool.min.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/intercepter/LoginIntercepter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/main.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/top.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/addThesis.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/left.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/manageSetData.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/modifyThesis.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/personInfo.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/studentDownloadTask.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/studentUploadThesis.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/teacherDownloadThesis.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/teacherGiveThesis.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/teacherOperate.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/teacherSelectStudent.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/teacherUploadTask.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/viewSelectThesisInfo.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/vo/DataAnalysis.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/echarts/echarts.min.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/dataAnalysis.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/entity/StudentInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/entity/TeacherInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/entity/StudentTeacherRelation.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/dataAnalysis.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/manageAddUser.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/StudentTeacherRelationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/StudentTeacherRelationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/mapper/StudentTeacherRelationMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/mapper/NopassThesisMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/NoPassThesisMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/serviceImpl/StudentTeacherRelationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/MenuService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/serviceImpl/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/mapper/MenuMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/controlProcess.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/MenuMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/selectThesisDetail.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/studentSelectThesis.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/util/FTPUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/controlProcess.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/StudentTeacherRelationMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/selectThesisDetail.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/FileHandleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/PersonInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gtms/gtms/util/MailUtils.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gtms" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gtms" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="10" />
+    <option name="width" value="1935" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="intercepter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gtms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559239117346" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.nnthink.aixcoder.config.Config" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources\static\js\echarts" />
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources\static\js\page" />
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources\static" />
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources\static\js" />
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources\static" />
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources" />
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources\static\js\page" />
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources\static\html" />
+      <recent name="C:\Users\84644\Desktop\biye\gtms\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GtmsApplication">
+    <configuration name="FTPUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gtms.gtms.util.FTPUtil" />
+      <module name="gtms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gtms.gtms.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpConnectionUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gtms.gtms.util.HttpConnectionUtil" />
+      <module name="gtms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gtms.gtms.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MailUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gtms.gtms.util.MailUtils" />
+      <module name="gtms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gtms.gtms.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GtmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gtms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtms.gtms.GtmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MailUtils" />
+        <item itemvalue="Application.FTPUtil" />
+        <item itemvalue="Application.HttpConnectionUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b27afad-49bf-4e1f-8597-d9f82770098e" name="Default Changelist" comment="" />
+      <created>1554170855765</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554170855765</updated>
+      <workItem from="1554170865879" duration="2424000" />
+      <workItem from="1554174835607" duration="7100000" />
+      <workItem from="1554186882479" duration="626000" />
+      <workItem from="1554187584180" duration="119000" />
+      <workItem from="1554190210705" duration="1855000" />
+      <workItem from="1554192595824" duration="1986000" />
+      <workItem from="1554200535210" duration="14884000" />
+      <workItem from="1554272465444" duration="4657000" />
+      <workItem from="1554277202053" duration="19885000" />
+      <workItem from="1554341966892" duration="14764000" />
+      <workItem from="1554368157091" duration="59000" />
+      <workItem from="1554597693049" duration="4905000" />
+      <workItem from="1554627803331" duration="18935000" />
+      <workItem from="1554654264617" duration="35143000" />
+      <workItem from="1554788803078" duration="37045000" />
+      <workItem from="1554908727235" duration="2754000" />
+      <workItem from="1554942310665" duration="2794000" />
+      <workItem from="1554950142984" duration="2943000" />
+      <workItem from="1554956688278" duration="43500000" />
+      <workItem from="1555179402293" duration="9448000" />
+      <workItem from="1555225088558" duration="17372000" />
+      <workItem from="1555306221498" duration="47241000" />
+      <workItem from="1555661494898" duration="97644000" />
+      <workItem from="1556091142386" duration="6475000" />
+      <workItem from="1556111966678" duration="13665000" />
+      <workItem from="1556170320333" duration="17986000" />
+      <workItem from="1556240488006" duration="16253000" />
+      <workItem from="1556297478959" duration="132000" />
+      <workItem from="1556298990890" duration="69917000" />
+      <workItem from="1556881466480" duration="734000" />
+      <workItem from="1557019004300" duration="723000" />
+      <workItem from="1557104147729" duration="3112000" />
+      <workItem from="1557192161182" duration="5858000" />
+      <workItem from="1557252612671" duration="649000" />
+      <workItem from="1557318452120" duration="780000" />
+      <workItem from="1557373925645" duration="155000" />
+      <workItem from="1557492093124" duration="721000" />
+      <workItem from="1557537166996" duration="118000" />
+      <workItem from="1557581562981" duration="1089000" />
+      <workItem from="1557592166866" duration="768000" />
+      <workItem from="1557852203468" duration="61000" />
+      <workItem from="1558079811279" duration="1046000" />
+      <workItem from="1558659410058" duration="8137000" />
+      <workItem from="1558926392476" duration="2694000" />
+      <workItem from="1558930485455" duration="1230000" />
+      <workItem from="1558973417528" duration="3274000" />
+      <workItem from="1559051286596" duration="1270000" />
+      <workItem from="1559231427346" duration="3276000" />
+      <workItem from="1559235955049" duration="1631000" />
+      <workItem from="1559238662098" duration="668000" />
+      <workItem from="1559292189723" duration="1199000" />
+    </task>
+    <task id="LOCAL-00001" summary="调整框架">
+      <created>1554253445071</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554253445071</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="551704000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8372781" visible="true" weight="0.17417619" />
+      <window_info id="Structure" order="1" sideWeight="0.16272189" side_tool="true" weight="0.10120644" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5011601" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34844193" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3512748" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4305949" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Gerrit" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="aiXcoder" order="10" side_tool="true" weight="0.32952252" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8372781" visible="true" weight="0.1997319" />
+      <window_info id="Structure" order="1" sideWeight="0.16272189" side_tool="true" weight="0.10120644" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5011601" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34844193" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21671388" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.09065156" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Gerrit" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="调整框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整框架" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/serviceImpl/StudentTeacherRelationServiceImpl.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/StudentTeacherRelationController.java</url>
+          <line>170</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/StudentTeacherRelationController.java</url>
+          <line>146</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/util/FTPUtil.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/util/FTPUtil.java</url>
+          <line>153</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/StudentTeacherRelationController.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/FileHandleController.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/FileHandleController.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/page/login.js</url>
+          <line>6</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="multipartFile.getOriginalFilename()" />
+        <watch expression="ftp.changeWorkingDirectory(tempPath)" />
+        <watch expression="ftp.changeWorkingDirectory(basePath + filePath)" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/echarts/dataTool.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/echarts/ecStat.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="61" lean-forward="true" selection-start-column="61" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/entity/TeacherInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/intercepter/LoginIntercepter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dataAnalysis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/dataAnalysis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="66" column="56" lean-forward="true" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/modifyPwd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/entity/StudentInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/StudentTeacherRelationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-351">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/entity/StudentTeacherRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manageAddUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="13" column="71" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="13" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/managerAddUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="3" column="7" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/mapper/NopassThesisMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/entity/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/NoPassThesisMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="57" column="80" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/MenuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/studentSelectThesis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/selectThesisDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="38" column="6" lean-forward="true" selection-start-line="21" selection-end-line="38" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2034#2040#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/studentSelectThesis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1993#1999#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/ThesisInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/select.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/controlProcess.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3416">
+          <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/switch.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/controlProcess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/selectThesisDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/entity/Init.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/projectlombok/lombok/1.18.6/lombok-1.18.6.jar!/lombok/Data.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/druid/1.1.10/druid-1.1.10.jar!/com/alibaba/druid/pool/DruidDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="2253" column="22" selection-start-line="2253" selection-start-column="15" selection-end-line="2253" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/config/MybatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/GtmsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="122" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/serviceImpl/MenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/mapper/MenuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-application.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="220" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/PersonInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1624">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/mapper/StudentTeacherRelationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/serviceImpl/TeacherInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context-support/5.1.5.RELEASE/spring-context-support-5.1.5.RELEASE.jar!/org/springframework/mail/MailSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/StudentTeacherRelationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="223" column="83" selection-start-line="223" selection-start-column="68" selection-end-line="223" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/controller/FileHandleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2744">
+          <caret line="117" column="106" selection-start-line="117" selection-start-column="94" selection-end-line="117" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/service/serviceImpl/StudentTeacherRelationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8098#8099#0" expanded="true" />
+            <element signature="e#8165#8166#0" expanded="true" />
+            <element signature="e#8228#8229#0" expanded="true" />
+            <element signature="e#8310#8311#0" expanded="true" />
+            <element signature="e#8360#8361#0" expanded="true" />
+            <element signature="e#8429#8430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/StudentTeacherRelationMapper.xml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1652">
+          <caret line="59" column="42" selection-start-line="51" selection-start-column="8" selection-end-line="59" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/util/FTPUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gtms/gtms/util/MailUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

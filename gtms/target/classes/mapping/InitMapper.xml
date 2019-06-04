@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gtms.gtms.mapper.InitMapper">
+    <resultMap id="BaseResultMap" type="com.gtms.gtms.entity.Init">
+        <id column="id" property="id"/>
+        <result column="student_num" property="studentNum"/>
+        <result column="teacher_num" property="teacherNum"/>
+    </resultMap>
+    <select id="getInitData" resultMap="BaseResultMap">
+      select * from T_INIT
+    </select>
+
+</mapper>
